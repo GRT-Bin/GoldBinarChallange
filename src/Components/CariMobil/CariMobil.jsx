@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import classes from "./carimobil.css";
-import Navbar from "../NavbarComp/NavbarComp";
 import axios from "axios";
 import { Card, Button } from "react-bootstrap";
 import { useNavigate } from "react-router";
@@ -49,8 +48,6 @@ const SearchCar = () => {
 
   return (
     <div>
-      <Navbar />
-
       <div className="section-search-car mb-5">
         <div className="container container-search-car">
           <form action="">

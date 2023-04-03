@@ -5,13 +5,17 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "../App.css";
 import Home from "../Pages/Home";
 import Pencarian from "../Pages/Pencarian";
-import DetailSewa from "../Pages/DetailSewaMobil";
+import DetailSewaMobil from "../Pages/DetailSewaMobil";
+import HasilPencarian from "../Pages/HasilPencarian";
+import Notfound from "../Pages/Notfound";
 
 const Routes = () => {
   return [
     { path: "/", element: <Home /> },
-    { path: "/hasilPencarian", element: <Pencarian /> },
-    { path: "/detailSewaMobil/:id", element: <DetailSewa /> },
+    { path: "/hasilPencarian", element: <HasilPencarian /> },
+    { path: "/*", element: <Notfound /> },
+    { path: "/Pencarian", element: <Pencarian /> },
+    { path: "/detailSewaMobil/:id", element: <DetailSewaMobil /> },
   ];
 };
 

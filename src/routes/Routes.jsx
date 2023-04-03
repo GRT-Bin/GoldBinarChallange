@@ -15,7 +15,7 @@ const Routes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/PencarianMobil" element={<Formkategori />} />
         <Route path="/hasilPencarian" element={<HasilPencarian />} />
-        <Route path="/detailSewaMobil" element={<DetailSewa />} />
+        <Route path="/detailSewaMobil/:id" element={<DetailSewa />} />
       </Routes>
     </BrowserRouter>
   );

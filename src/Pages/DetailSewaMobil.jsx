@@ -3,7 +3,7 @@ import Footer from "../Components/Footer/Footer";
 import NavbarComp from "../Components/NavbarComp/NavbarComp";
 import DetailSewa from "../Components/DetailSewaMobil/DetailSewa";
 
-const DetailSewaPaketMobil = () => {
+const DetailSewaMobil = () => {
   return (
     <div>
       <NavbarComp />
@@ -13,4 +13,4 @@ const DetailSewaPaketMobil = () => {
   );
 };
 
-export default DetailSewaPaketMobil;
+export default DetailSewaMobil;

@@ -3,7 +3,7 @@ import Home from "./Pages/Home";
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-import DetailSewa from "./Pages/DetailSewa";
+import DetailSewa from "./Pages/DetailSewaMobil";
 import Formkategori from "./Pages/Formkategori";
 import HasilPencarian from "./Pages/HasilPencarian";
 import "../App.css";
@@ -15,7 +15,7 @@ const Routes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/PencarianMobil" element={<Formkategori />} />
         <Route path="/hasilPencarian" element={<HasilPencarian />} />
-        <Route path="/detailSewa" element={<DetailSewa />} />
+        <Route path="/detailSewaMobil" element={<DetailSewa />} />
       </Routes>
     </BrowserRouter>
   );

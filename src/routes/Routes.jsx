@@ -1,24 +1,18 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./Pages/Home";
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
-import DetailSewa from "./Pages/DetailSewaMobil";
-import Formkategori from "./Pages/Formkategori";
-import HasilPencarian from "./Pages/HasilPencarian";
+import "bootstrap/dist/js/bootstrap.bundle";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import "../App.css";
+import Home from "../Pages/Home";
+import Pencarian from "../Pages/Pencarian";
+import DetailSewa from "../Pages/DetailSewaMobil";
 
 const Routes = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/PencarianMobil" element={<Formkategori />} />
-        <Route path="/hasilPencarian" element={<HasilPencarian />} />
-        <Route path="/detailSewaMobil/:id" element={<DetailSewa />} />
-      </Routes>
-    </BrowserRouter>
-  );
+  return [
+    { path: "/", element: <Home /> },
+    { path: "/hasilPencarian", element: <Pencarian /> },
+    { path: "/detailSewaMobil/:id", element: <DetailSewa /> },
+  ];
 };
 
 export default Routes;

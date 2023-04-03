@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./carimobil.css";
 import classes from "./carimobil.css";
 import Navbar from "../NavbarComp/NavbarComp";
 import axios from "axios";
@@ -12,7 +11,7 @@ const SearchCar = () => {
     name: null,
   });
   const LoadDetail = (id) => {
-    navigate("/DetailSewaMobil/" + id);
+    navigate("/detailSewaMobil/" + id);
   };
   const [selectCar, setSelectCar] = useState([]);
   const onSearchChange = (ev, key) => {

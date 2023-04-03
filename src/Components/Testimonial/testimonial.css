@@ -10,7 +10,7 @@ p {
   justify-content: center;
 }
 
-.testimonialcomp1 {
+.testimonial1 {
   padding-bottom: 10px;
   background-color: #f1f3ff;
   margin-bottom: 10px;
@@ -18,42 +18,42 @@ p {
 }
 
 @media (min-width: 768px) {
-  .testimonialcomp1 {
+  .testimonial1 {
     width: 50%;
     margin-left: 25%;
   }
 
-  .testimonialcomp2 {
+  .testimonial2 {
     width: 50%;
     margin-left: 25%;
   }
 }
 
-.testimonialcomp2 {
+.testimonial2 {
   padding-bottom: 10px;
   background-color: #f1f3ff;
   margin-bottom: 10px;
   border-style: none;
 }
 
-.testimonialcompImg {
+.testimonialImg {
   padding-left: 135px;
   padding-top: 50px;
 }
 
-.testimonialcompContainer {
+.testimonialContainer {
   padding-top: 5em;
 }
 
-.testimonialcompRating {
+.testimonialRating {
   text-align: center;
 }
 
 @media (min-width: 768px) {
-  .testimonialcompRating {
+  .testimonialRating {
     text-align: start;
   }
-  .testimonialcompImg {
+  .testimonialImg {
     padding-left: 40px;
     padding-top: 60px;
   }

@@ -1,25 +1,10 @@
-import React from "react";
-import Home from "./Pages/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Pencarian from "./Pages/Pencarian";
-import HasilPencarian from "./Pages/HasilPencarian";
-import DetailSewaMobil from "./Pages/DetailSewaMobil";
-
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
+import { useRoutes } from "react-router";
+import Routes from "./routes/Routes";
 
 const App = () => {
-  return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Pencarian" element={<Pencarian />} />
-          <Route path="/hasilPencarian" element={<HasilPencarian />} />
-          <Route path="/DetailSewaMobil" element={<DetailSewaMobil />} />
-        </Routes>
-      </BrowserRouter>
-    </>
-  );
+  const appRoutes = useRoutes(Routes());
+
+  return appRoutes;
 };
+
 export default App;

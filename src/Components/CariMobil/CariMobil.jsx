@@ -38,11 +38,8 @@ const SearchCar = () => {
         config
       );
       setSelectCar(data.cars);
-      // console.log('data',data)
-      // console.log (selectCar)
-      // console.log(search)
     } catch {
-      console.log("err");
+      console.log("error");
     }
   };
 

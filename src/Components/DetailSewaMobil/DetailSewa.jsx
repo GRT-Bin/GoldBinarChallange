@@ -1,5 +1,4 @@
 import axios from "axios";
-import BASE_API from "../../api/BASE_API";
 import "./detailsewa.css";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
@@ -25,7 +24,7 @@ const DetailSewa = () => {
       carDataChange(data);
       console.log("data", data);
     } catch {
-      console.log("err");
+      console.log("error");
     }
   };
 
